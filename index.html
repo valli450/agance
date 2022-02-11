@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href='./styles.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  
+</head>
+<body>
+  <div class="whale-section">
+    <header class='header'>
+      <div class="header__top">
+        <div class='header__logo'>
+          <img src='./images/logo.svg' alt='Logo'>
+        </div>
+        <div class="header__mobile-block mobile-block">
+          <div class="mobile-block__btn-block">
+            <button class='mobile-block__button' onclick='more()'>
+              <img src='./images/icon-hamburger.svg' alt='More info button'>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header_list">
+        <ion-icon name="triangle"></ion-icon>
+        <ul class='show__list'>
+          <li id='about' class='about' onclick='select(about)'>About</li>
+          <li id='service' class='service' onclick='select(service)'>Services</li>
+          <li id='project' class='project' onclick='select(project)'>Projects</li>
+          <li id='contact' class='contact' onclick='select(contact)'>Contact</li>
+        </ul>
+      </div>
+      <div class="header__main">
+        <h1 class='header-main__h1'>We are creatives</h1>
+        <img src='./images/icon-arrow-down.svg' alt='Arrow down' class='header-main__arrow'>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="content__block block">
+          <div class="block__image" id='egg'>
+          </div>
+          <div class="block__text first">
+            <h3>Transform your brand</h3>
+            <p>We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href='#''>Learn more</a>
+          </div>
+          <div class="block__image" id='glass'>
+          </div>
+          <div class="block__text second">
+            <h3>Stand out to the right audience</h3>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <a href='#'>Learn more</a>
+          </div>
+          <div class="block__mix cherry">
+            <div class="cherry-under">
+              <h3>Graphic design</h3>
+              <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+            </div>
+          </div>
+          <div class="block__mix orange">
+            <div class="orange-under">
+              <h3>Photography</h3>
+              <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__client client">
+          <h2>Client testimonials</h2>
+          <div class="client__block">
+            <div class="client__feedback emely">
+              <img src='./images/image-emily.jpg' alt='Customer photo'>
+              <p class='client__feedback__comment'>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+              <h4>Emily R.</h4>
+              <p class='position'>Marketing Director</p>
+            </div>
+            <div class="client__feedback thomas">
+              <img src="./images/image-thomas.jpg" alt="Customer photo">
+              <p class='client__feedback__comment'>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+              <h4>Thomas S.</h4>
+              <p class='position'>Chief Operating Officer</p>
+            </div>
+            <div class="client__feedback jennie">
+              <img src="./images/image-jennie.jpg" alt="Customer photo">
+              <p class='client__feedback__comment'>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+              <h4>Jennie F.</h4>
+              <p class='position'>Business Owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__images image">
+          <div class="images milk"></div>
+          <div class="images plate"></div>
+          <div class="images cone"></div>
+          <div class="images sugar"></div>
+        </div>
+      </div>
+    </main>
+    <footer class='footer'>
+      <div class="footer__logo">
+        <h2>sunnyside</h2>
+      </div>
+      <div class="footer__about">
+        <ul class='footer_ul'>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+      </div>
+      <div class="footer__link">
+        <a href="http://facebook.com/" target="_blank"><img src='./images/icon-facebook.svg'></a>
+        <a href="http://instagram.com" target="_blank"><img src='./images/icon-instagram.svg'></a>
+        <a href="http://pinterest.com" target="_blank"><img src='./images/icon-pinterest.svg'></a>
+        <a href="http://twitter.com/" target="_blank"><img src='./images/icon-twitter.svg'></a>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src='./main.js' ></script>
+</body>
+</html>
